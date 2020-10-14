@@ -31,23 +31,37 @@
 
 ///////////////////////////////////////////
 
-console.log('hello');
+// console.log('hello');
 
-let email = 'myemail@mail.com';
-console.log(email);
+// let email = 'myemail@mail.com';
+// console.log(email);
 
-let firtsName = 'Jonh';
-let secondName = 'Deer';
-let fullName = firtsName + ' ' + secondName;
-console.log(fullName);
+// let firtsName = 'Jonh';
+// let secondName = 'Deer';
+// let fullName = firtsName + ' ' + secondName;
+// console.log(fullName);
 
-console.log(fullName[1]);
+// console.log(fullName[1]);
 
-console.log(fullName.length);
-console.log(fullName.toUpperCase());
-let fullNameInLowerCase = fullName.toLowerCase();
-console.log(fullNameInLowerCase, fullName);
+// console.log(fullName.length);
+// console.log(fullName.toUpperCase());
+// let fullNameInLowerCase = fullName.toLowerCase();
+// console.log(fullNameInLowerCase, fullName);
 
-let index = email.indexOf('@');
-console.log(index);
+// let index = email.indexOf('@');
+// console.log(index);
 
+////////////////////////////////////////////////
+
+ let ninjas = ['shaun', 'ryu', 'chun-li'];
+ console.log(ninjas);
+ console.log(ninjas[0]);
+
+ let age = 25;
+
+ console.log(age > 'c');
+
+ let result = Number('100');
+ result = String(100);
+ result = Boolean(2);
+ console.log(result, typeof(result));
