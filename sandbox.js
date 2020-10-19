@@ -58,3 +58,15 @@ button2.addEventListener('click', () => {
     li.textContent = 'new todo';
     ul.append(li);
 });
+
+//////////////////////////////////////////////
+
+const li = document.querySelector('li');
+
+li.addEventListener('copy', (e) => {
+    console.log('copy event in li', e.target);
+});
+
+ul.addEventListener('copy', e => {
+    console.log('copy event in ul', e.target);
+});
