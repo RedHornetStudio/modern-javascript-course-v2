@@ -92,6 +92,17 @@ class MyArray {
         }
         return filteredArray;
     }
+    sort(callback) {
+        for(let i = 0; i < this.length - 1; i++) {
+            for(let k = 0; k < this.length - 1; k++) {
+                if(callback(this[k], this[k + 1]) > 0) {
+                    let y = this[k];
+                    this[k] = this[k + 1];
+                    this[k + 1] = y;
+                }
+            }
+        }
+    }
 }
 
 let myArray = new MyArray('mario', 'luigi', 'ryu', 'shaun', 'chun-li');
@@ -111,3 +122,7 @@ let fillteredArray = myArray.filter((element, index) => {
 });
 
 console.log(fillteredArray);
+
+const numbers = new MyArray(10, 30, 5, 3, 50, 100);
+numbers.sort((a, b) => b - a);
+console.log(numbers);
