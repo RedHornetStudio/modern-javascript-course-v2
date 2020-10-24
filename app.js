@@ -18,3 +18,7 @@ const tick = () => {
 }
 
 setInterval(tick, 1000);
+
+const now = new Date();
+
+console.log(dateFns.format(now, 'DD.MM.YYYY'));
